@@ -29,19 +29,19 @@ class SignInPage extends StatelessWidget {
           SizedBox(
             height: 6.0,
           ),
-          Container(
-              color: Colors.red,
-              child: SizedBox(
-                height: 100.0,
-              )),
-          SizedBox(
-            height: 6.0,
+          ElevatedButton(
+            //before was used RaisedButton
+            child: Text(
+              'Sign in with Google',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 15.0,
+              ),
+            ),
+            style: ElevatedButton.styleFrom(
+                primary: Colors.white),
+            onPressed: () {},
           ),
-          Container(
-              color: Colors.purple,
-              child: SizedBox(
-                height: 100.0,
-              )),
         ],
       ),
     );
