@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracking_time/shared_widgets/default_elevated_button.dart';
 
 class SignInPage extends StatelessWidget {
   @override
@@ -30,25 +31,11 @@ class SignInPage extends StatelessWidget {
           SizedBox(
             height: 6.0,
           ),
-          ElevatedButton(
-            //before was used RaisedButton
-            child: Text(
-              'Sign in with Google',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 15.0,
-              ),
-            ),
-            style: ElevatedButton.styleFrom(
-              primary: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(4.0),
-                ),
-              ),
-            ),
-            onPressed: () {},
+          DefaultElevatedButton(),
+          SizedBox(
+            height: 6.0,
           ),
+          DefaultElevatedButton(),
         ],
       ),
     );
