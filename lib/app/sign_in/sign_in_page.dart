@@ -1,6 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:tracking_time/shared_widgets/default_elevated_button.dart';
+import 'package:tracking_time/shared_widgets/sign_in_button.dart';
 
 class SignInPage extends StatelessWidget {
   @override
@@ -55,6 +55,15 @@ class SignInPage extends StatelessWidget {
             borderRadius: 4.0,
             onPressed: () {},
           ),
+          SizedBox(
+            height: 6.0,
+          ),
+          SignInButton(
+            text: "HOLA",
+            color: Colors.green,
+            textColor: Colors.purple,
+            onPressed: (){},
+          )
         ],
       ),
     );
