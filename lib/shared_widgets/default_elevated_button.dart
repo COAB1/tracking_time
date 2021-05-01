@@ -1,26 +1,32 @@
 import 'package:flutter/material.dart';
 
 class DefaultElevatedButton extends StatelessWidget {
+  DefaultElevatedButton({
+    this.child,
+    this.color,
+    this.borderRadius,
+    this.onPressed,
+  });
+
+  final Widget child;
+  final Color color;
+  final double borderRadius;
+  final VoidCallback onPressed;
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       //before was used RaisedButton
-      child: Text(
-        'Sign in with Google',
-        style: TextStyle(
-          color: Colors.black,
-          fontSize: 15.0,
-        ),
-      ),
+      child: child,
       style: ElevatedButton.styleFrom(
-        primary: Colors.white,
+        primary: color,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
-            Radius.circular(4.0),
+            Radius.circular(borderRadius),
           ),
         ),
       ),
-      onPressed: () {},
+      onPressed: onPressed,
     );
   }
 }

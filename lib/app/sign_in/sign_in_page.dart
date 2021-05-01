@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:tracking_time/shared_widgets/default_elevated_button.dart';
 
@@ -31,11 +32,29 @@ class SignInPage extends StatelessWidget {
           SizedBox(
             height: 6.0,
           ),
-          DefaultElevatedButton(),
+          DefaultElevatedButton(
+            child: Text('Sign in with FACEBOOK',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15.0,
+                )),
+            color: Colors.blue[300],
+            borderRadius: 4.0,
+            onPressed: () {},
+          ),
           SizedBox(
             height: 6.0,
           ),
-          DefaultElevatedButton(),
+          DefaultElevatedButton(
+            child: Text('Sign in with GOOGLE',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15.0,
+                )),
+            color:  Colors.green[300],
+            borderRadius: 4.0,
+            onPressed: () {},
+          ),
         ],
       ),
     );
