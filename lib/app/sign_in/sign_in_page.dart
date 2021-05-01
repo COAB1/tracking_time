@@ -9,11 +9,11 @@ class SignInPage extends StatelessWidget {
         centerTitle: true,
         elevation: 5.0,
       ),
-      body: buildContent(),
+      body: _buildContent(),
     );
   }
 
-  Widget buildContent() {
+  Widget _buildContent() {
     return Container(
       color: Colors.yellow,
       child: Column(
