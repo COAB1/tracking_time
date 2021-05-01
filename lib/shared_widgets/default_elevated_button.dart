@@ -4,7 +4,7 @@ class DefaultElevatedButton extends StatelessWidget {
   DefaultElevatedButton({
     this.child,
     this.color,
-    this.borderRadius,
+    this.borderRadius: 4.0,
     this.onPressed,
   });
 
