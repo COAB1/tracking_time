@@ -20,19 +20,23 @@ class SignInPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Container(
-              color: Colors.orange,
-              child: SizedBox(
-                height: 100.0,
+          Text('Sign in',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 32.0,
+                fontWeight: FontWeight.w500,
               )),
-              SizedBox(height: 6.0,),
+          SizedBox(
+            height: 6.0,
+          ),
           Container(
               color: Colors.red,
               child: SizedBox(
                 height: 100.0,
               )),
-              SizedBox(height: 6.0,),
-
+          SizedBox(
+            height: 6.0,
+          ),
           Container(
               color: Colors.purple,
               child: SizedBox(
