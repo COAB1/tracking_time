@@ -40,7 +40,10 @@ class SignInPage extends StatelessWidget {
                 Text(
                   'Sign in with Google',
                 ),
-                Image.asset('images/google-logo.png'),
+                Opacity(
+                  opacity: 0,
+                  child: Image.asset('images/google-logo.png'),
+                ),
               ],
             ),
             color: Colors.cyan,
